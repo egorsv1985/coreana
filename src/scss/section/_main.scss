@@ -1,0 +1,61 @@
+.main {
+  background-color: #202020;
+  padding: 130px 0 120px;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+	@include wh(140%, 13%);
+	@include background (url("@img/icons/main-bg-top.svg"));
+	@include pos (absolute, $top:0, $right:0);
+
+  }
+  &::after{
+	@include pseudo;
+	@include wh(100%, 12%);
+	@include background (url("@img/icons/main-bg-bottom.svg"));
+	@include pos (absolute, $bottom:0, $right:0);
+  }
+
+  // .main__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+    gap: 30px;
+    padding: 0 20px;
+  }
+  // .main__top-img
+  &__top-img {
+    @include pos(absolute, $top: 0, $left: 0);
+  }
+
+  // .main__title-box
+  &__title-box {
+    @include flex($flex-direction: column);
+  }
+  // .main__title-img
+  &__title-img {
+    @include wh(311px, 43px);
+  }
+  // .main__title
+  &__title {
+  }
+  // .main__subtitle-box
+  &__subtitle-box {
+    @include flex($flex-direction: column);
+  }
+  // .main__subtitle
+  &__subtitle {
+  }
+  // .main__subtitle-img
+  &__subtitle-img {
+    @include wh(230px, 26px);
+  }
+  // .main__img
+  &__img {
+    @include wh(238px, 77px);
+  }
+  // .main__btn
+  &__btn {
+    max-width: 210px;
+  }
+}

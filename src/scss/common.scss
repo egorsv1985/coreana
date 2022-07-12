@@ -1,9 +1,26 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 .title {
+  
+font-family: 'Gilroy';
+font-weight: 700;
+font-size: 60px;
+line-height: 74px;
+
+color: $accentColor;
 }
 
 .subtitle {
+  
+font-family: 'Gilroy';
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+
+color: $accentColor;
+
+
+
 }
 
 .text {

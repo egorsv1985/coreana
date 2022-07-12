@@ -1,5 +1,5 @@
 .header {
-  height: 60px;
+
 
   background: linear-gradient(180deg, #fffe00 9.33%, #ff3900 100%);
 
@@ -11,11 +11,15 @@
 }
   // .header__wrapper
   &__wrapper {
-    @include flex(space-between, center);
-    @include media (min, lg) {
-      justify-content: flex-start;
-    }
+   @include flex ($flex-direction: column);
   }
+    // .header__top
+    &__top {
+      @include flex(space-between, center);
+      @include media (min, lg) {
+        justify-content: flex-start;
+      }
+    }
   // .header__logo
   &__logo {
   }
@@ -25,4 +29,39 @@
   // .header__burger
   &__burger {
   }
+
+   // .header__bottom
+   &__bottom {
+    display: none;
+    @include media (min, md) {
+      @include flex(space-between, center);
+    }
+   }
+  
+   // .header__location-box
+   &__location-box {}
+   // .header__select-box
+   &__select-box {}
+   // .header__span-location
+   &__span-location {}
+   // .header__select
+   &__select {}
+   // .header__box
+   &__box {}
+   // .header__tel-box
+   &__tel-box {}
+   // .header__tel
+   &__tel {}
+   // .header__tel-span
+   &__tel-span {}
+   // .header__user-box
+   &__user-box {}
+   // .header__span-enter
+   &__span-enter {}
+   // .header__span-registration
+   &__span-registration {}
+   // .header__btn
+   &__btn {}
+   // .header__btn-img
+   &__btn-img {}
 }

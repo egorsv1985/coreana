@@ -39,14 +39,14 @@ flsFunctions.menuInit();
 Документация:
 Сниппет (HTML): spollers
 */
-flsFunctions.spollers();
+// flsFunctions.spollers();
 
 /*
 Модуль работы с табами
 Документация:
 Сниппет (HTML): tabs
 */
-flsFunctions.tabs();
+// flsFunctions.tabs();
 
 /*
 Модуль "показать еще"
@@ -60,7 +60,7 @@ flsFunctions.tabs();
 Документация по работе в шаблоне:
 Сниппет (HTML): pl
 */
-import './libs/popup.js'
+// import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
@@ -90,7 +90,7 @@ import * as flsForms from "./files/forms/forms.js";
 // flsForms.formRating();
 
 /* Модуль работы с select. */
-// import './libs/select.js'
+import './libs/select.js'
 
 /* (В работе) Модуль работы с масками.*/
 /*
