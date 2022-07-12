@@ -1,0 +1,28 @@
+.header {
+  height: 60px;
+
+  background: linear-gradient(180deg, #fffe00 9.33%, #ff3900 100%);
+
+  @include media (min, md) {
+    padding-top: 10px;
+  }
+@include media (min, lg) {
+  padding-top: 0;
+}
+  // .header__wrapper
+  &__wrapper {
+    @include flex(space-between, center);
+    @include media (min, lg) {
+      justify-content: flex-start;
+    }
+  }
+  // .header__logo
+  &__logo {
+  }
+  // .header__nav
+  &__nav {
+  }
+  // .header__burger
+  &__burger {
+  }
+}

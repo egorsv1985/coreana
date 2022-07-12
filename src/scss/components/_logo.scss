@@ -1,0 +1,13 @@
+.logo {
+	@include media (min, lg) {
+		margin-right: 40px;
+	}
+	// .logo__img
+	&__img {
+		@include wh (170px, 60px);
+
+		@include media (min, lg) {
+			width: 211px;
+		}
+	}
+  }

@@ -1,0 +1,65 @@
+.burger {
+
+	@include wh (35px, 20px);
+	
+	display: block;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	z-index: 15;
+
+
+	
+
+	@include media (min, lg) {
+		display: none;
+	}
+
+	&__inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		@include flex (center, center);
+
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0px;
+			position: absolute;
+			width: 35px;
+			height: 3px;
+			background-color: $mainColor;
+
+		}
+
+		&::before {
+			top: 0px;
+		}
+
+		&::after {
+			bottom: 0px;
+		}
+
+		span {
+			top: calc(50% - 1px);
+		}
+
+		.open & {
+			span {
+				transform: scale(0);
+			}
+
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}

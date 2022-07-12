@@ -1,0 +1,77 @@
+//<FORM>
+// Снипет (HTML):
+.form {
+  background-color: #ffffff;
+  border-radius: 39px;
+  padding: 55px 58px 46px 60px;
+  margin-bottom: 70px;
+
+  // .form__wrapper
+  &__wrapper {
+    @include flex();
+  }
+  // .form__content
+  &__content {
+  }
+  // .form__subtitle
+  &__subtitle {
+    font-size: 26px;
+    line-height: 32px;
+
+    margin-bottom: 15px;
+  }
+  // .form__text
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #8f8f8f;
+
+    max-width: 465px;
+  }
+  // .form__support
+  &__support {
+    @include flex($flex-direction: column);
+    gap: 20px;
+  }
+  // .form__input
+  &__input {
+  }
+  // .form__btn
+  &__btn {
+  }
+}
+//</FORM>
+
+// <BUTTONS>
+// Снипет (HTML): btn
+// @import "button";
+
+// <INPUTS>
+// Снипет (HTML): inp
+@import "input";
+
+// <CHECK>
+// Снипет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Снипет (HTML): opt
+// @import "radio";
+
+// <SELECT>
+// Снипет (HTML): sel
+// @import "select";
+
+// <RATING>
+// Снипет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Снипет (HTML): qa
+// @import "quantity";
+
+// <RANGE>
+// Снипет (HTML):
+// @import "range";

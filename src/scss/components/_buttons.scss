@@ -1,0 +1,85 @@
+.button {
+  @include flex(center, center);
+  width: 100%;
+  @include flex(center, center);
+
+  height: 44px;
+
+  border-radius: 10px;
+
+  font-family: "Montserrat";
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 121%;
+
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+.button-primary {
+  border: 1px solid #aeaeae;
+  color: #494949;
+
+  &:hover {
+    background-color: lighten(#fbf8f8, 3%);
+    text-decoration: underline;
+  }
+}
+
+.button-secondary {
+  background-color: #0d0d0d;
+  border: 1px solid #0d0d0d;
+
+  color: #ffffff;
+  &:hover {
+    border: 1px solid #aeaeae;
+   
+    background-color: lighten(#0d0d0d, 15%);
+  }
+}
+
+.btn {
+  @include flex(center, center);
+  width: 100%;
+  height: 60px;
+  border-radius: 9px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ed6210 0%, #fbd72b 100%),
+    linear-gradient(90.22deg, #f6c754 -0.85%, #e2a052 44.81%, #d17231 95.72%),
+    #d9d9d9;
+
+  color: #ffffff;
+  &:hover {
+    background: lighten(#fbd72b, 6%);
+
+  }
+}
+
+.btn-secondary {
+  filter: drop-shadow(0px 4px 11px rgba(159, 97, 4, 0.25));
+
+  background: linear-gradient(90deg, #ff5f00 0%, #ffd300 100%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
+  &:hover {
+    background: lighten(#fbd72b, 6%);
+    color: $mainColor;
+    -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+
+  
+  }
+}

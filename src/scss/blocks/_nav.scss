@@ -1,0 +1,32 @@
+.nav {
+  display: none;
+
+  @include media(min, lg) {
+    display: block;
+  }
+  // .nav__list
+  &__list {
+    @include flex($flex-direction: column);
+    gap: 32px;
+
+    @include media(min, lg) {
+      flex-direction: row;
+    }
+  }
+  // .nav__item
+  &__item {
+  }
+  // .nav__link
+  &__link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+
+    color: $mainColor;
+
+    &:hover {
+      color: lighten($mainColor, 30%);
+    }
+  }
+}
