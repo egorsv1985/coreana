@@ -5,6 +5,9 @@
 	// .logo__img
 	&__img {
 		@include wh (170px, 60px);
+		@include media (min, md){
+			height: 50px;
+		}
 
 		@include media (min, lg) {
 			width: 211px;

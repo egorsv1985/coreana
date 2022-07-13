@@ -1,26 +1,38 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 .title {
-  
-font-family: 'Gilroy';
-font-weight: 700;
-font-size: 60px;
-line-height: 74px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 74px;
 
-color: $accentColor;
+  color: $accentColor;
+  @include media(min, md) {
+    font-size: 66px;
+    line-height: 75px;
+  }
+  @include media(min, lg) {
+    font-size: 100px;
+    line-height: 123px;
+  }
 }
 
 .subtitle {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: $accentColor;
+
+  @include media(min, md) {
+    font-size: 56px;
   
-font-family: 'Gilroy';
-font-weight: 700;
-font-size: 36px;
-line-height: 45px;
-
-color: $accentColor;
-
-
-
+  }
+  @include media(min, lg) {
+    font-size: 85px;
+    line-height: 120px;
+  }
 }
 
 .text {

@@ -27,12 +27,15 @@
           </div>
         </button>
       </div>
-
-      <div class="header__bottom">
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__wrap">
         <div class="header__location-box">
-          <div class="header__select-box" style="width: 200px">
+          <div class="header__select-box" style="width: 170px">
             <span class="header__span-location">Ваш регион:</span>
-            <select class="header__select" name="city[]" id="city" size="1">
+            <select class="header__select" name="city[]" id="city" size="0">
               <option value="0" selected="selected">Белгород</option>
               <option value="1">Москва</option>
               <option value="2">Самара</option>
@@ -47,8 +50,9 @@
             >
           </div>
           <div class="header__user-box">
-            <span class="header__span-enter">ВХОД</span>
-            <span class="header__span-registration">/ РЕГИСТРАЦИЯ</span>
+            <a class="header__user" href="#"
+              ><span class="header__user-span">ВХОД</span>/ РЕГИСТРАЦИЯ</a
+            >
             <a class="header__btn" href="#" role="button">
               <img
                 src="@img/icons/basket.svg"

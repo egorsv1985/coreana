@@ -2,19 +2,46 @@
   background-color: #202020;
   padding: 130px 0 120px;
   position: relative;
+  @include media(min, md) {
+    padding: 50px 0 55px;
+  }
+
+  @include media(min, lg) {
+    padding: 62px 0 40px;
+  }
+  .container {
+    @include media(min, lg) {
+      max-width: 1415px;
+    }
+  }
 
   &::before {
     @include pseudo;
-	@include wh(140%, 13%);
-	@include background (url("@img/icons/main-bg-top.svg"));
-	@include pos (absolute, $top:0, $right:0);
+    @include wh(140%, 13%);
+    @include background(url("@img/icons/main-bg-top.svg"));
+    @include pos(absolute, $top: 0, $right: 0);
+    @include media(min, md) {
+      @include wh(59%, 24%);
+    }
+    @include media(min, xl) {
+      @include wh(147%, 34%);
 
+      right: -1%;
+    }
   }
-  &::after{
-	@include pseudo;
-	@include wh(100%, 12%);
-	@include background (url("@img/icons/main-bg-bottom.svg"));
-	@include pos (absolute, $bottom:0, $right:0);
+  &::after {
+    @include pseudo;
+    @include wh(100%, 12%);
+    @include background(url("@img/icons/main-bg-bottom.svg"));
+    @include pos(absolute, $bottom: 0, $right: 0);
+    @include media(min, md) {
+      @include wh(29%, 30%);
+      bottom: -11%;
+      right: -2%;
+    }
+    @include media(min, lg) {
+      @include wh(46%, 18%);
+    }
   }
 
   // .main__wrapper
@@ -22,19 +49,41 @@
     @include flex($flex-direction: column);
     gap: 30px;
     padding: 0 20px;
+    @include media(min, md) {
+      padding: 0 70px;
+    }
+    @include media(min, lg) {
+      gap: 22px;
+    }
   }
   // .main__top-img
   &__top-img {
     @include pos(absolute, $top: 0, $left: 0);
+    @include media(min, lg) {
+      width: 215px;
+    }
   }
 
   // .main__title-box
   &__title-box {
     @include flex($flex-direction: column);
+    @include media(min, md) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
   // .main__title-img
   &__title-img {
     @include wh(311px, 43px);
+    @include media(min, md) {
+      @include wh(356px, 50px);
+      margin-right: 28px;
+    }
+    @include media(min, lg) {
+      @include wh(536px, 110px);
+
+      margin-right: 32px;
+    }
   }
   // .main__title
   &__title {
@@ -42,20 +91,58 @@
   // .main__subtitle-box
   &__subtitle-box {
     @include flex($flex-direction: column);
+    @include media(min, xl) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
   // .main__subtitle
   &__subtitle {
+    @include media(min, md) {
+      margin-bottom: 6px;
+    }
+    @include media(min, lg) {
+      margin-right: 32px;
+    }
   }
   // .main__subtitle-img
   &__subtitle-img {
     @include wh(230px, 26px);
+    @include media(min, md) {
+      @include wh(270px, 36px);
+    }
+    @include media(min, lg) {
+      @include wh(410px, 62px);
+    }
   }
   // .main__img
   &__img {
     @include wh(238px, 77px);
+    @include media(min, md) {
+      @include wh(225px, 70px);
+      @include pos(absolute, $top: 57%, $right: 20%);
+      transform: translateY(-50%);
+    }
+
+    @include media(min, xl) {
+      @include wh(380px, 125px);
+      @include pos(absolute, $top: 53%, $right: 12%);
+      transform: translateY(-50%);
+    }
   }
   // .main__btn
   &__btn {
     max-width: 210px;
+    @include media(min, md) {
+      max-width: 160px;
+      
+      position: absolute;
+      bottom: 27px;
+      right: 174px;
+    }
+    @include media(min, lg) {
+      margin: 0 auto;
+      position: unset;
+    }
   }
 }
