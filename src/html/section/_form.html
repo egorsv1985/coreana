@@ -1,0 +1,54 @@
+<section class="forms" id="forms">
+  <div class="container">
+    <div class="forms__wrapper">
+      <h2 class="forms__title">Записаться на станцию</h2>
+      <form action="#" class="form" data-required>
+        <div class="form__box">
+          <div class="form__select-box" style="width: 170px">
+            <label for="city" class="form__label">Выбор СТО</label>
+            <select class="header__select" name="city[]" id="city" size="0">
+              <option value="0" selected="selected">Белгород</option>
+              <option value="1">Москва</option>
+              <option value="2">Самара</option>
+              <option value="3">Минск</option>
+            </select>
+          </div>
+          <div class="form__wrap">
+            <label for="name" class="form__label">Фамилия Имя Отчество</label>
+            <input
+              type="text"
+              class="form__input"
+              id="name"
+              name="name"
+              placeholder="Иванов Иван Иванович"
+			  pattern="[А-Яа-яЁё ]+"
+            />
+          </div>
+          <div class="form__wrap">
+            <label for="tel" class="form__label">Телефон</label>
+            <input
+              id="tel"
+              type="tel"
+              name="phone"
+              class="form__input"
+              value="+7 (__) ___-__-__"
+              pattern="^\+7(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+              required
+            />
+          </div>
+        </div>
+        <div class="form__box form__box--gap0">
+          <div class="form__inner">
+            <a class="form__btn btn" href="#" type="submit" role="button"
+              >Отправить звявку</a
+            >
+            <p class="form__text text">
+              Нажимая кнопку, я соглашаюсь с
+              <a href="#" class="form__link">политикой </a>сайта
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

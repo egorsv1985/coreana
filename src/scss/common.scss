@@ -27,13 +27,26 @@
 
   @include media(min, md) {
     font-size: 56px;
-  
   }
   @include media(min, lg) {
     font-size: 85px;
     line-height: 120px;
   }
 }
+.description {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
 
+  color: #222222;
+}
 .text {
+  
+font-size: 16px;
+line-height: 150%;
+
+color: #222222;
+
+
+
 }

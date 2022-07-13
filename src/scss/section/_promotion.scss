@@ -1,0 +1,15 @@
+.promotion {
+  background-color: #fffed0;
+  // .promotion__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+  }
+  // .promotion__secret
+  &__secret {
+    background-color: #ebe717;
+  }
+
+  // .promotion__timer
+  &__timer {
+  }
+}

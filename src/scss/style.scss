@@ -157,8 +157,11 @@ body {
 // Подключение стилей секций
 
 @import "./section/main";
+@import "./section/promotion";
 
 // block
 @import "header";
 @import "./blocks/nav";
 @import "./blocks/open-burger";
+@import "./blocks/secret";
+@import "./blocks/timer";
